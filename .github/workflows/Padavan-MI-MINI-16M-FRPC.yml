@@ -1,4 +1,6 @@
 #修改TNAME: K2P 中的K2P为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
+#frps界面开关frps界面开关需要的自己去把那部分注释删掉就可以了！Advanced_frp.asp
+#https://github.com/fightroad/Padavan-KVR/commit/01dedd47494696e7a2c4fde2204e69a17f3f8942
 name: Build-Padavan-MI-MINI-16M-FRPC
 
 on: 
