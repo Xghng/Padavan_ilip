@@ -53,5 +53,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-MI-MINI-16M-FRPC+SHADOWSOCKS_SS+op_en_vp_n
+        name: Padavan-MI-MINI-16M-FRPC+shadowsocks_v3.3.5+op_en_vp_n_v2.5.2
         path: /opt/images
