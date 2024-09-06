@@ -62,4 +62,4 @@ jobs:
        bodyFile: "changelog.md"
        tag: AtuoBuild
        allowUpdates: true
-       name: Padavan-MI-MINI-16M-FRPS_v0.40.0+OP
+       name: Padavan-MI-MINI-16M-FRPS_v0.40.0+OP_EN_v_p_n_v2.5.2
