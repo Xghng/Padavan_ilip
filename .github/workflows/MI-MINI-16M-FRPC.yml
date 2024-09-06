@@ -64,4 +64,4 @@ jobs:
        bodyFile: "changelog.md"
        tag: AtuoBuild
        allowUpdates: true
-       name: Padavan-MI-MINI-16M-FRPC_v0.40.0+科学上网+OP_EN_v_p_n_v2.5.2
+       name: Padavan-MI-MINI-16M-FRPC_v0.40.0+shadowsocks_v3.3.5+OP_EN_vp_n_v2.5.2
