@@ -41,11 +41,9 @@ jobs:
         #####################################################################################
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config #科学上网SS plus+
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FRPC/d' .config #内网穿透FRPC客户端
-        #sed -i '/CONFIG_FIRMWARE_INCLUDE_FRPS/d' .config #内网穿透FRPS服务器端
         ######################################################################
         echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config #科学上网SS plus+
         echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config #内网穿透FRPC客户端
-        #echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> .config #内网穿透FRPS服务器端
         ####################################################################################
         sed -i 's/\r//' /opt/rt-n56u/trunk/.config
         sudo ./clear_tree
@@ -55,5 +53,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-MI-MINI-16M-FRPC+科学上网SS+op_en_vp_n
+        name: Padavan-MI-MINI-16M-FRPC+SHADOWSOCKS_SS+op_en_vp_n
         path: /opt/images
