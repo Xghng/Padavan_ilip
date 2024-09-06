@@ -49,11 +49,15 @@ EOF
 
 #启动：
 frpc_enable=`nvram get frpc_enable`
+frpc_enable=${frpc_enable:-"0"}
 frps_enable=`nvram get frps_enable`
-if [ "$frpc_enable" = "1" ] ; then
-    frpc -c /tmp/frp/myfrpc.ini 2>&1 &
-fi
+frps_enable=${frps_enable:-"0"}
 if [ "$frps_enable" = "1" ] ; then
     frps -c /tmp/frp/myfrps.ini 2>&1 &
 fi
+if [ "$frpc_enable" = "1" ] ; then
+    [ "$frps_enable" = "1" ] && sleep 60
+    frpc -c /tmp/frp/myfrpc.ini 2>&1 &
+fi
+
  
