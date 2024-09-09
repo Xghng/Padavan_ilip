@@ -165,7 +165,7 @@ function done_validating(action){
 												</div>
 											</td>
 										</tr>
-												<tr>
+												<!-- <tr>
 											<th width="30%"><a class="help_tooltip" href="javascript: void(0)" onmouseover="openTooltip(this, 26, 9);">启用frps</a></th>
 											<td>
 													<div class="main_itoggle">
