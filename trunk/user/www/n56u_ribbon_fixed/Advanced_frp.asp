@@ -145,9 +145,9 @@ function done_validating(action){
 									</div>
 
 									<table width="100%" align="center" cellpadding="4" cellspacing="0" class="table">
-									<!-- <tr> <th>frpc<#running_status#></th>
+									<tr> <th>frpc<#running_status#></th>
                                             <td id="frpc_status" colspan="2"></td>
-                                        </tr> -->
+                                        </tr>
 										<tr> <th>frps<#running_status#></th>
                                             <td id="frps_status" colspan="2"></td>
                                         </tr>
