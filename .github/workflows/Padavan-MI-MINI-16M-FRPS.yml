@@ -39,6 +39,7 @@ jobs:
         fi
         cp -f configs/templates/$TNAME.config .config
         #####################################################################################
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config #科学上网SS plus+
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FRPS/d' .config #内网穿透FRPS服务器端
         ######################################################################
         echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config #内网穿透FRPS服务器端
