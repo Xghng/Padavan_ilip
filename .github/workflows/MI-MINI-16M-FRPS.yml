@@ -40,9 +40,13 @@ jobs:
         fi
         cp -f configs/templates/$m.config .config
         #####################################################################################
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config #科学上网SS plus+
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FRPS/d' .config #内网穿透FRPS服务器端
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_CURL/d' .config #CURL
         ######################################################################
+        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config #科学上网SS plus+
         echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config #内网穿透FRPS服务器端
+        echo "CONFIG_FIRMWARE_INCLUDE_CURL=y" >> .config #CURL
         ####################################################################################
         sed -i "s/^CONFIG_TOOLCHAIN_DIR=.*$/CONFIG_TOOLCHAIN_DIR=${CONFIG_TOOLCHAIN_DIR}/g" .config
         sudo ./clear_tree_simple
