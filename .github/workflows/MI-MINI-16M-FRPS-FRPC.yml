@@ -41,12 +41,12 @@ jobs:
         fi
         cp -f configs/templates/$TNAME.config .config
         #####################################################################################
-        #sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config #科学上网SS plus+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config #科学上网SS plus+
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FRPC/d' .config #内网穿透FRPC客户端
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FRPS/d' .config #内网穿透FRPS服务器端
         sed -i '/CONFIG_FIRMWARE_INCLUDE_CURL/d' .config #CURL
         ######################################################################
-        #echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config #科学上网SS plus+
+        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config #科学上网SS plus+
         echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config #内网穿透FRPC客户端
         echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config #内网穿透FRPS服务器端
         echo "CONFIG_FIRMWARE_INCLUDE_CURL=y" >> .config #CURL
@@ -59,6 +59,6 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-MI-MINI-16M-FRPS+FRPC_v0.60.0+op_en_vp_n_v2.5.2+2024-09-12
+        name: Padavan-MI-MINI-16M-FRPS+FRPC_v0.40.0+op_en_vp_n_v2.5.2+2024-09-12
         path: /opt/images
 
