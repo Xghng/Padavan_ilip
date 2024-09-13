@@ -43,11 +43,11 @@ jobs:
         #####################################################################################
         #sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config #科学上网SS plus+
         #sed -i '/CONFIG_FIRMWARE_INCLUDE_FRPC/d' .config #内网穿透FRPC客户端
-        #sed -i '/CONFIG_FIRMWARE_INCLUDE_CURL/d' .config #CURL
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_CURL/d' .config #CURL
         ######################################################################
         #echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config #科学上网SS plus+
         #echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config #内网穿透FRPC客户端
-        #echo "CONFIG_FIRMWARE_INCLUDE_CURL=y" >> .config #CURL
+        echo "CONFIG_FIRMWARE_INCLUDE_CURL=y" >> .config #CURL
         ####################################################################################
         sed -i 's/\r//' /opt/rt-n56u/trunk/.config
         sudo ./clear_tree
