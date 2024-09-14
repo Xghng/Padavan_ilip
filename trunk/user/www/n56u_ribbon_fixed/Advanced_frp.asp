@@ -145,13 +145,13 @@ function done_validating(action){
 									</div>
 
 									<table width="100%" align="center" cellpadding="4" cellspacing="0" class="table">
-									<!-- <tr> <th>frpc<#running_status#></th>
+									<!--<tr> <th>frpc<#running_status#></th>
                                             <td id="frpc_status" colspan="2"></td>
-                                        </tr> -->
+                                        </tr>-->
 										<tr> <th>frps<#running_status#></th>
                                             <td id="frps_status" colspan="2"></td>
                                         </tr>
-										<!-- <tr>
+										<!--<tr>
 											<th width="30%"><a class="help_tooltip" href="javascript: void(0)" onmouseover="openTooltip(this, 26, 9);">启用frpc</a></th>
 											<td>
 													<div class="main_itoggle">
@@ -164,7 +164,7 @@ function done_validating(action){
 													<input type="radio" value="0" name="frpc_enable" id="frpc_enable_0" class="input" value="0" <% nvram_match_x("", "frpc_enable", "0", "checked"); %> /><#checkbox_No#>
 												</div>
 											</td>
-										</tr> -->
+										</tr>-->
 												<tr>
 											<th width="30%"><a class="help_tooltip" href="javascript: void(0)" onmouseover="openTooltip(this, 26, 9);">启用frps</a></th>
 											<td>
